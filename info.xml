@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<extension key="org.uschess.square" type="module">
+  <file>square</file>
+  <name>Square Payment Processor</name>
+  <description>Square payment processor integration for CiviCRM. Supports one-time and recurring contributions via the Square Payments and Subscriptions APIs, using the Square Web Payments SDK for PCI-compliant client-side card tokenization. Compatible with CiviCRM contribution pages, event registration, and Drupal Webform CiviCRM.</description>
+  <license>GPL-3.0</license>
+  <maintainer>
+    <author>
+      <name>US Chess Federation</name>
+      <email>emanuel.london@uschess.org</email>
+      <role>Maintainer</role>
+    </author>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/US-CHESS/org.uschess.square</url>
+    <url desc="Documentation">https://github.com/US-CHESS/org.uschess.square#readme</url>
+    <url desc="Support">https://github.com/US-CHESS/org.uschess.square/issues</url>
+    <url desc="Licensing">https://www.gnu.org/licenses/gpl-3.0.html</url>
+  </urls>
+  <releaseDate>2026-03-11</releaseDate>
+  <version>1.0.0</version>
+  <develStage>stable</develStage>
+  <compatibility>
+    <ver>5.69</ver>
+    <ver>5.70</ver>
+    <ver>5.71</ver>
+    <ver>5.72</ver>
+    <ver>5.73</ver>
+    <ver>5.74</ver>
+    <ver>5.75</ver>
+    <ver>5.76</ver>
+    <ver>5.77</ver>
+    <ver>5.78</ver>
+    <ver>5.79</ver>
+    <ver>5.80</ver>
+  </compatibility>
+  <requires>
+    <ext>org.civicrm.payment</ext>
+  </requires>
+  <civix>
+    <namespace>CRM/Square</namespace>
+    <format>25.10.2</format>
+    <angularModule>crmSquare</angularModule>
+  </civix>
+  <mixins>
+    <mixin>menu-xml@1.0.0</mixin>
+    <mixin>mgd-php@1.0.0</mixin>
+    <mixin>scan-classes@1.0.0</mixin>
+    <mixin>setting-php@1.0.0</mixin>
+    <mixin>smarty-v2@1.0.1</mixin>
+  </mixins>
+  <classloader>
+    <psr0 prefix="CRM_" path="."/>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+</extension>

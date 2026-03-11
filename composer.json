@@ -1,0 +1,45 @@
+{
+  "name": "uschess/org.uschess.square",
+  "description": "Square payment processor integration for CiviCRM. Supports one-time and recurring contributions via the Square Web Payments SDK.",
+  "type": "civicrm-extension",
+  "homepage": "https://github.com/US-CHESS/org.uschess.square",
+  "keywords": [
+    "civicrm",
+    "square",
+    "payment-processor",
+    "drupal",
+    "webform"
+  ],
+  "extra": {
+    "civicrm": {
+      "type": "payment"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "CRM\\": "CRM/"
+    }
+  },
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "US Chess Federation",
+      "email": "emanuel.london@uschess.org",
+      "homepage": "https://www.uschess.org",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/US-CHESS/org.uschess.square/issues",
+    "source": "https://github.com/US-CHESS/org.uschess.square"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CRM\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=8.1",
+    "square/square": "^43.2"
+  }
+}
